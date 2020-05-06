@@ -1,17 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {Head,Foot} from './Head.js';
-import GridForm from './GridForm';
+import GridForm from './components/GridForm';
+import SimpleMap from './components/Home.js';
+import Footer from './components/footer.js';
+import HeadSection from './components/HeadSection.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+class App extends React.Component {
+      render(){
+      return (
+        <div>
+            <Router>
+              <div className="header-wrapper">
+                    <nav className="navBar">
+                    <ul className="header-ul">
+                        <li>
+                        <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                        <Link to="/faq">FAQ</Link>
+                        </li>
+                        <li>
+                        <Link to="/track">Track You Truck</Link>
+                        </li>
+                    </ul>
+                    </nav>
+              </div>
+           <Switch>
+              <Route path="/faq">
+                  <GridForm/>
+              </Route>
+              <Route path="/track">
+                <SimpleMap/>
+              </Route>
+              <Route path="/">
+                  <HeadSection/>
+              </Route>
+            </Switch>
+            </Router>
+          <Footer/>
+        </div>
+      );
+  }
 
-function App() {
-  return (
-    <div>
-        <Head/>
-        <GridForm className="app"/>
-        <Foot/>
-    </div>
-  );
 }
 
 export default App;
