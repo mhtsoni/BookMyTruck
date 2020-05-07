@@ -4,7 +4,7 @@ class GridForm extends React.Component {
     constructor() {
       super();
       this.state = {
-        data: [{ques:"What if the car shows up late?", uri: "We try our best to ensure our partners reach our customers on time. But in case of delays, do call us and we will help you out by either providing an alternate vehicle or giving you a full refund."},
+        data: [{ques:"What if the car shows up late?", uri: "https://www.youtube.com/watch?v=d0IvkU0tEtg", ans:"We try our best to ensure our partners reach our customers on time. But in case of delays, do call us and we will help you out by either providing an alternate vehicle or giving you a full refund."},
         {ques:"Do I need to register on your site to book tickets?", uri: "https://www.youtube.com/watch?v=foMsSf7Fjpo",ans: "No. You can use our service fully without the need to register. You just need to provide your details at the time of booking."}
         ],
         appName: 'OnLeaf FAQ',
@@ -105,7 +105,7 @@ class GridForm extends React.Component {
             var ur = this.props.url;
             var id = ur.match("v=([a-zA-Z0-9]+)&?")[1]; //sGbxmsDFVnE
 
-            var embedlink = "http://www.youtube.com/embed/" + id /*+"?autoplay=1"*/;
+            var embedlink = "https://www.youtube.com/embed/" + id /*+"?autoplay=1"*/;
             return (
             <div>
                 <iframe  className="video" src={embedlink}></iframe><br/>
