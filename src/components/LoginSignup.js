@@ -4,8 +4,6 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  import SignUp from "./SignUp.js";
-  import Login from "./Login.js"
   import React from 'react'
   
   function LoginSignup() {
