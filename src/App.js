@@ -31,7 +31,7 @@ class App extends React.Component {
                   <div id="navbar">
                     <div id="logo" className="reverse">
                       <div className="mobile-btn" style={{cursor:"pointer"}} onClick={this.openNav}>&#9776;</div>
-                      <div className="logo">BOOK<span>MY</span> TRUCK</div>
+                      <div className="logo">BOOK<span> MY</span> TRUCK</div>
 
                     </div>
                     <div id="links">
