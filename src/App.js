@@ -29,7 +29,7 @@ class App extends React.Component {
                         <Link to="/faq">FAQ</Link>
                         </li>
                         <li>
-                        <Link to="/track">Track You Truck</Link>
+                        <Link to="/OurCenters">Our Service centers</Link>
                         </li>
                         <li>
                         <Link to="/login">LogIn/SignUp</Link>

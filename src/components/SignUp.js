@@ -10,7 +10,7 @@ function SignUp() {
                     <div class="row">
                         <div class="col text-center">
                         <h1>Register</h1>
-                        <p class="text-h3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. </p>
+                        <p class="text-h3">You are only 1 step behind your first truck booking. </p>
                         </div>
                     </div>
                     <div class="row align-items-center">

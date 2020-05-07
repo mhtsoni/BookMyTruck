@@ -23,6 +23,10 @@
 /*App Search Bar*/
 body{
   background-color: coral;
+  background-image: url("./images/body_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .headSection{
   width:100vw;
@@ -104,24 +108,17 @@ body{
   position: absolute;
   color: transparent;
 }
+/*How This Goes*/
+.howThisGoes{
+  background-position: bottom;
+  width: auto;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .processImg{
-  animation-name: rotor;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
   margin:auto;
   display: block;
-}
-@keyframes rotor{
-  from{
-    transform: rotateY(-3deg);
-    transform: rotateZ(-3deg);
-  }
-  to{
-    transform: rotateY(3deg);
-    transform: rotateZ(3deg);
-    
-  }
 }
 .app {
   border-radius: 10px;
@@ -168,7 +165,7 @@ body{
   max-width: 500px;
   display: block;
   margin:auto;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
 }
 .signup{
   max-width: 800px;
@@ -177,17 +174,24 @@ body{
   margin-bottom: 20px;
   border-radius: 20px;
   padding:10px 0px;
+  margin-bottom: 10%;
 }
 .toggleLogin button{
   color: white;
   background-color:#0069D9;
   border:2px solid #0069D9;
   display: inline-block;
+  border-right:1px solid white;
 }
 .toggleLogin{
+  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+}
+.toggleLogin a{
+  color:white;
 }
 /*footer*/
 .footer{

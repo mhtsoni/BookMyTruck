@@ -6,7 +6,7 @@ function Login() {
             <div className="global-container login">
 	<div className="card login-form">
 	<div className="card-body">
-		<h3 className="card-title text-center">Log in to Codepen</h3>
+		<h3 className="card-title text-center">Log in to BookMyTruck.com</h3>
 		<div className="card-text">
 			<form>
 				<div className="form-group">
