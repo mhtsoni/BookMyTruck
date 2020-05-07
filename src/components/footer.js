@@ -13,52 +13,52 @@ export default class Footer extends Component {
                                 </h4>
                                 <ul className="list-unstyled">
                                     <li className="text-light">
-                                        Web design
+                                        Packing and Moving
                                     </li>
                                     <li className="text-light">
-                                        Web design
+                                        Truck Booking
                                     </li>
                                     <li className="text-light">
-                                        Web design
+                                        Website design
                                     </li>
                                     <li className="text-light">
-                                        Web design
+                                        Bulk Truck Booking
                                     </li>
                                 </ul>
                             </div>
                             <div className="col-sm-6 col-md-3 pb-4">
                                 <h4 className="mb-4">
-                                    About
+                                    Our Qualities
                                 </h4>
                                 <ul className="list-unstyled">
                                     <li className="text-light">
-                                        Company
+                                        On Time Truck Availability
                                     </li>
                                     <li className="text-light">
-                                        Company
+                                        Safe Packing and Moving
                                     </li>
                                     <li className="text-light">
-                                        Company
+                                        Best Pricing
                                     </li>
                                     <li className="text-light">
-                                        Company
+                                        Customer Satisfaction
                                     </li>
                                 </ul>
                             </div>
                             <div className="col-md-6 pb-4">
                                 <h4 className="mb-4">
-                                    Company Name
+                                    BookMyTruck.com
                                 </h4>
                                 <p>
-                                    Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
+                                    Our customers mean a lot to us.
                                 </p>
                             </div>
                         </div>
                         <div className="col d-flex justify-content-center mb-4">
-                            <a href="#" className="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook-m.png" alt="Facebook" /></a><a href="#" className="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter-m.png" alt="Twitter" /></a><a href="#" className="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-instagram-m.png" alt="Instagram" /></a><a href="#" className="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-linkedin-m.png" alt="Linkedin" /></a>
+                            <a target="_blank" href="https://github.com/mhtsoni" className="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-github-m.png" alt="Github" /></a><a target="_blank" href="https://www.quora.com/profile/Mohit-770" className="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-quora-m.png" alt="Quora" /></a><a target="_blank" href="https://www.linkedin.com/in/mhtsoni/" className="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-linkedin-m.png" alt="Linkedin" /></a>
                         </div>
                         <p className="text-center text-secondary border-top border-secondary py-4">
-                            iLeaf Solutions © 2020
+                            Mohit Soni © 2020
                         </p>
                     </div>
                 </footer>

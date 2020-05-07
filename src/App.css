@@ -69,6 +69,13 @@ body{
   border:1px solid #E6E6E6;
   transition: 2s;
 }
+
+#hsdate{
+  width:80%;
+  margin-left: 10%;
+  margin-bottom: 10px;;
+  border:1px solid white;
+}
 /*Header Section Submit Button*/
 .hsButton{
   width:80%;
@@ -79,6 +86,42 @@ body{
 .hsButton:hover{
   background-color: aqua;
   transition: 2s;
+}
+/*Hiding lat long paras*/
+#latd{
+  position: absolute;
+  color: transparent;
+}
+#longd{
+  position: absolute;
+  color: transparent;
+}
+#lat{
+  position: absolute;
+  color: transparent;
+}
+#long{
+  position: absolute;
+  color: transparent;
+}
+.processImg{
+  animation-name: rotor;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  margin:auto;
+  display: block;
+}
+@keyframes rotor{
+  from{
+    transform: rotateY(-3deg);
+    transform: rotateZ(-3deg);
+  }
+  to{
+    transform: rotateY(3deg);
+    transform: rotateZ(3deg);
+    
+  }
 }
 .app {
   border-radius: 10px;
@@ -120,7 +163,32 @@ body{
   height:100%;
   z-index:-1;
 }
-
+/*Login*/
+.login{
+  max-width: 500px;
+  display: block;
+  margin:auto;
+  margin-bottom: 20px;
+}
+.signup{
+  max-width: 800px;
+  display: block;
+  margin:auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding:10px 0px;
+}
+.toggleLogin button{
+  color: white;
+  background-color:#0069D9;
+  border:2px solid #0069D9;
+  display: inline-block;
+}
+.toggleLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*footer*/
 .footer{
   display: block;

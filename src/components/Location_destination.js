@@ -30,9 +30,9 @@ export default function Locd(props) {
           <div>
             <p id="latd">{coordinates.lat}</p>
             <p id="longd">{coordinates.lng}</p>
-            <input className="inputlocation" {...getInputProps({ placeholder: "Type Pickup Address" })} />
+            <input className="inputlocation" {...getInputProps({ placeholder: "Type Destination Address" })} />
 
-            <div>
+            <div style={{position:'absolute'}}>
               {loading ? <div>...loading</div> : null}
               {console.log(suggestions)}
               

@@ -33,7 +33,7 @@ export default function Loc(props) {
 
             <input className="inputlocation" {...getInputProps({ placeholder: "Type Pickup Address" })} />
 
-            <div>
+            <div style={{position:'absolute'}}>
               {loading ? <div>...loading</div> : null}
               {console.log(suggestions)}
               

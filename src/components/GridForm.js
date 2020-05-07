@@ -4,8 +4,8 @@ class GridForm extends React.Component {
     constructor() {
       super();
       this.state = {
-        data: [{ques:"how is OnLeaf Truck Booking App", uri: "https://www.youtube.com/watch?v=xOaTlmd4miw&feature=youtu.be",ans: "Onleaf TruckBooking app is a one stop solution to book trucks and load your stuff to any other locations"},
-        {ques:"How to book a truck", uri: "https://www.youtube.com/watch?v=foMsSf7Fjpo",ans: "Its just a single 2 step process enter starting point and destination then click on load now"}
+        data: [{ques:"What if the car shows up late?", uri: "We try our best to ensure our partners reach our customers on time. But in case of delays, do call us and we will help you out by either providing an alternate vehicle or giving you a full refund."},
+        {ques:"Do I need to register on your site to book tickets?", uri: "https://www.youtube.com/watch?v=foMsSf7Fjpo",ans: "No. You can use our service fully without the need to register. You just need to provide your details at the time of booking."}
         ],
         appName: 'OnLeaf FAQ',
         list: undefined,

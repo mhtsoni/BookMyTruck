@@ -4,6 +4,10 @@ import GridForm from './components/GridForm';
 import SimpleMap from './components/Home.js';
 import Footer from './components/footer.js';
 import HeadSection from './components/HeadSection.js';
+import HowThisGoes from './components/HowThisGoes.js'
+import LoginSignup from './components/LoginSignup.js'
+import SignUp from "./components/SignUp.js"
+import Login from "./components/Login.js"
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,18 +31,30 @@ class App extends React.Component {
                         <li>
                         <Link to="/track">Track You Truck</Link>
                         </li>
+                        <li>
+                        <Link to="/login">LogIn/SignUp</Link>
+                        </li>
                     </ul>
                     </nav>
               </div>
            <Switch>
+              <Route path="/Login">
+                  <LoginSignup/>
+                  <Login/>
+              </Route>
               <Route path="/faq">
                   <GridForm/>
               </Route>
               <Route path="/track">
                 <SimpleMap/>
               </Route>
+              <Route path="/signup">
+                  <LoginSignup/>
+                  <SignUp/>
+              </Route>
               <Route path="/">
                   <HeadSection/>
+                  <HowThisGoes/>
               </Route>
             </Switch>
             </Router>

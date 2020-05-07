@@ -19,6 +19,14 @@ export class HeadSection extends Component {
         this.submitHandler=this.submitHandler.bind(this);
         this.getTruck=this.getTruck.bind(this);
     }
+    /*check if date is a future date*/
+    isFutureDate(idate){
+      var today = new Date().getTime(),
+          idate = idate.split("-");
+  
+      idate = new Date(idate[0], idate[1] - 1, idate[2]).getTime();
+      return (today - idate) < 0;
+  }
     /*Getting Truck Selection*/
     getTruck(x){
         this.setState({truck: x});
@@ -44,10 +52,10 @@ export class HeadSection extends Component {
             else{
                 var cost=15;
             }
-            if((Math.floor(getDistance(start,end)/1000)*cost==0) || (this.state.destlat==0 && this.state.destlong==0) || (this.state.srclat==0 && this.state.srclong==0) )
-                alert("Please Fill All The Feilds correctly");
+            if((Math.floor(getDistance(start,end)/1000)*cost==0) || (this.state.destlat==0 && this.state.destlong==0) || (this.state.srclat==0 && this.state.srclong==0) || !(this.isFutureDate(document.getElementById("hsdate").value)) )
+                alert("Please Fill All The Feilds correctly.");
             else
-                alert("Estimated Fare is "+Math.floor(getDistance(start,end)/1000)*cost +"INR") ;
+                alert("Estimated Fare is "+Math.floor(getDistance(start,end)/1000)*cost +" INR.") ;
       }  
     render() {
         return (
@@ -56,10 +64,11 @@ export class HeadSection extends Component {
                     <img src={headImage} alt="Truck Image With Mobile"/>
                 </div>
                 <div id="hsDiv2">
-                  <h1 id="hsHeading"><span>BOOK TRUCK </span><span  style={{color:"white"}}>SAVE BUCK</span></h1>
+                  <h1 id="hsHeading"><span>BOOK TRUCKS </span><span  style={{color:"white"}}>SAVE BUCKS</span></h1>
                   <Loc cords={this.latlongsource}/>
                   <Locd cord={this.latlong} />
                   <SelectTruck val={this.getTruck}/>
+                  <input type="date" id="hsdate"/>
                   <button className="hsButton" onClick={()=>this.submitHandler(
                 { latitude: this.state.srclat, longitude: this.state.srclong },
                 { latitude: this.state.destlat, longitude: this.state.destlong }
