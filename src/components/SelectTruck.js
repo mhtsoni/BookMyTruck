@@ -5,7 +5,7 @@ export class SelectTruck extends Component {
         return (
             <div>
                 <select onChange={(e)=>this.props.val(e.target.value)} className="inputlocation" id="trucks" name="trucklist" form="carform">
-                    <option value={15}>TATA ACE</option>
+                    <option selected value={15}>TATA ACE</option>
                     <option value={20}>BOLERO PICK UP</option>
                     <option value={25}>TATA 407</option>
                     <option value={30}>EICHER 14FT</option>
