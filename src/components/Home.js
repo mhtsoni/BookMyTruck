@@ -27,6 +27,7 @@ class SimpleMap extends Component {
             text="My Marker"
           />
         </GoogleMapReact>
+        <p>.</p>
       </div>
     );
   }
