@@ -45,7 +45,7 @@ class App extends React.Component {
               <Route path="/faq">
                   <GridForm/>
               </Route>
-              <Route path="/track">
+              <Route path="/OurCenters">
                 <SimpleMap/>
               </Route>
               <Route path="/signup">
